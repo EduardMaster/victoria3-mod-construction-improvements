@@ -8,4 +8,4 @@
 - Minimum Money Reserves = 5M
 - Company Stablish Cooldown = 1 Year
 - Company Disband Cooldown = 1 Year
-- Max Year Delay until Increase Salaries = 1 Week
+- Max Delay until Increase Salaries = 1 Week
