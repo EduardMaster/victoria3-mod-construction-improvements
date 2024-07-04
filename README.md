@@ -1,6 +1,6 @@
 # Construction Improvements
 
-## Improve some values balance more the Game to countries with low People amount and taxes returns
+## Improve some values to balance more the Game for countries with low People and low taxes return
 
 ### Rules
 - Construction Point Value = 1000
@@ -9,9 +9,3 @@
 - Company Stablish Cooldown = 1 Year
 - Company Disband Cooldown = 1 Year
 - Max Year Delay until Increase Salaries = 1 Week
-
-### What will really helps
-- When your are building something you may get negative balance but afters the builds is ready
-- you can sell the building to Privaty investors and get money to continue building more
-- is another form to financiate constructions with countries that don't have much positive balance
-
