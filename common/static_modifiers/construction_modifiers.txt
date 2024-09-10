@@ -1,0 +1,8 @@
+
+
+
+construction_boost = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	country_authority_add = 50
+  country_authority_mult = 1
+}

@@ -1,0 +1,9 @@
+construction_boost_max_limit = 1000000000
+construction_boost_multiplier = {
+  value = 0
+  add = gdp
+  divide = construction_boost_max_limit
+  subtract = 1
+  multiply = -1
+  min = 0
+}

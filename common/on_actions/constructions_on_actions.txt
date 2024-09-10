@@ -1,0 +1,21 @@
+
+on_monthly_pulse_country = {
+  events = {
+
+  }
+  random_events = {
+
+  }
+  effect = {
+    if  = {
+      limit = {
+        has_modifier = construction_boost
+      }
+      remove_modifier = construction_boost
+    }
+    add_modifier = {
+      name = construction_boost
+      multiplier = construction_boost_multiplier
+    }
+  }
+}
