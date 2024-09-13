@@ -1,11 +1,7 @@
 
 on_monthly_pulse_country = {
-  events = {
-
-  }
-  random_events = {
-
-  }
+  #events = {}
+  #random_events = {}
   effect = {
     if  = {
       limit = {
