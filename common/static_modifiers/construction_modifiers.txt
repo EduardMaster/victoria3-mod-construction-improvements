@@ -2,7 +2,7 @@
 
 
 construction_boost = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
-	country_construction_add = 50
-  country_construction_mult = 1
+	icon = "gfx/interface/icons/decree/decree_road_maintenance.dds"
+	country_construction_add = 100
+	state_construction_mult = 0.5
 }

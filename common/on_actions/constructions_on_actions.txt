@@ -9,9 +9,16 @@ on_monthly_pulse_country = {
       }
       remove_modifier = construction_boost
     }
-    add_modifier = {
-      name = construction_boost
-      multiplier = construction_boost_multiplier
+    if = {
+      limit = {
+        gdp < construction_boost_max_limit
+        # not = {  is_country_type = decentralized}
+        country_rank < rank_value:great_power
+      }
+      add_modifier = {
+        name = construction_boost
+        multiplier = construction_boost_multiplier
+      }
     }
   }
 }
