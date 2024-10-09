@@ -9,6 +9,12 @@ on_monthly_pulse_country = {
       }
       remove_modifier = construction_boost
     }
+    if  = {
+      limit = {
+        has_modifier = construction_reduction
+      }
+      remove_modifier = construction_reduction
+    }
     if = {
       limit = {
         gdp < construction_boost_max_limit
@@ -18,6 +24,11 @@ on_monthly_pulse_country = {
       add_modifier = {
         name = construction_boost
         multiplier = construction_boost_multiplier
+      }
+    } else = {
+      add_modifier = {
+        name = construction_reduction
+        multiplier = construction_reduction_multiplier
       }
     }
   }
