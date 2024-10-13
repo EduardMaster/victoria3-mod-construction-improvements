@@ -5,5 +5,6 @@ NEconomy = {
   COMPANY_ON_ESTABLISH_COOLDOWN_MONTHS = 12 # 60			# Cooldown in months after establishing a company before you can disband it
 	COMPANY_ON_DISBAND_COOLDOWN_MONTHS = 12 # 48				# Cooldown in months after disbanding a company before you can re-establish it
   BUILDING_FAILED_HIRE_COOLDOWN_WEEKS_WITHOUT_WAGE_RAISE = 1 # 4 # If a building fails to hire, it waits this many weeks before trying again *unless* it has since raised wages or adjusted its hiring rate
+  GOLD_RESERVE_MIN = 5000000	# 1000 #  Base Cash Reserve is 5 Million
 }
 

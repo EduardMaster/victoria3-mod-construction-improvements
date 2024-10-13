@@ -1,5 +1,4 @@
 construction_boost_max_limit = 100000000 # 100m
-construction_reduction_limit = 50000000 # 50m
 construction_boost_multiplier = {
   value = 0
   add = gdp
@@ -7,13 +6,4 @@ construction_boost_multiplier = {
   subtract = 1
   multiply = -1
   min = 0
-}
-
-construction_reduction_multiplier = {
-  value = 0
-  add = gdp
-  subtract = construction_reduction_limit
-  divide = construction_reduction_limit
-  multiply = -1
-  min = -80 # limite de 80% de reduction
 }
