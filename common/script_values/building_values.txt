@@ -5,3 +5,4 @@ construction_cost_high = 800
 construction_cost_medium = 600
 construction_cost_low = 400
 construction_cost_very_low = 200
+construction_cost_extreme_low = 100
