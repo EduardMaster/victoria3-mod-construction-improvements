@@ -1,4 +1,4 @@
-construction_boost_max_limit = 100000000 # 100m
+﻿construction_boost_max_limit = 100000000 # 100m
 construction_boost_multiplier = {
   value = 0
   add = gdp

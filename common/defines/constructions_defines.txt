@@ -1,4 +1,4 @@
-
+﻿
 NEconomy = {
   NATIONALIZATION_PER_LEVEL_COST = 1000 # 500		# How much it costs to nationalize one level of a building per construction point
   PRIVATIZATION_PER_LEVEL_COST = 1000 # 250					# How much it costs to privatize one level of a building per construction point

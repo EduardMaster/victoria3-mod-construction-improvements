@@ -1,4 +1,4 @@
-
+﻿
 on_monthly_pulse_country = {
   #events = {}
   #random_events = {}

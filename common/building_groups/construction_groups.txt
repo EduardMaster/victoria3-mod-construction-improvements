@@ -1,4 +1,4 @@
-bg_construction = {
+﻿bg_construction = {
 	parent_group = bg_public_infrastructure
 
 	infrastructure_usage_per_level = 1
