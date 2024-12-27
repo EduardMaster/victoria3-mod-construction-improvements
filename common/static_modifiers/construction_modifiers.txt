@@ -1,6 +1,6 @@
 ﻿
 construction_boost = {
 	icon = "gfx/interface/icons/decree/decree_road_maintenance.dds"
-	country_construction_add = 50
-	state_construction_mult = 0.25
+	country_construction_add = 40
+	state_construction_mult = 0.20
 }
