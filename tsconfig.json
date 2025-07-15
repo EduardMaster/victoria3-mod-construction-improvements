@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* Opções Básicas */
+    "target": "es2022",                                  /* A versão do ECMAScript para a saída. Deve ser uma versão moderna. */
+    "module": "nodenext",                                /* <--- Mude para 'nodenext' ou 'esnext' para ES Modules */
+    "lib": ["es2022"],                                   /* Bibliotecas a serem incluídas. */
+    "outDir": "./dist",                                  /* Diretório onde os arquivos JavaScript compilados serão emitidos. */
+    "rootDir": "./src",                                  /* Diretório raiz dos arquivos TypeScript. */
+    "esModuleInterop": true,                             /* Essencial para compatibilidade com CommonJS. */
+    "forceConsistentCasingInFileNames": true,            /* Consistência nos nomes dos arquivos. */
+
+    /* Opções de Checagem de Tipos Estritas */
+    "strict": true,                                      /* Conjunto abrangente de checagem de tipos estritas. */
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* Resolução de Módulos */
+    "moduleResolution": "nodenext",                      /* <--- Mude para 'nodenext' para resolver módulos como o Node.js faria com ES Modules. */
+    "baseUrl": "./",
+    "paths": { },
+
+    /* Opções Avançadas */
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "checkJs": false,
+    "incremental": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

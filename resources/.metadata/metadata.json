@@ -3,7 +3,7 @@
   "id": "",
   "version": "1.0",
   "supported_game_version": "1.*",
-  "short_description": "Increase Point of Construction Value in Money",
+  "short_description": "Reduce the Construction Costs",
   "tags": [],
   "relationships": [],
   "game_custom_data": {
