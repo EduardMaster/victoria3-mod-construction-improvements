@@ -7,5 +7,5 @@
 - Company Stablish Cooldown = 1 Year
 - Company Disband Cooldown = 1 Year
 - Max Delay until Increase Salaries = 1 Week
-- Construction Cost recuded by 5 Times (-80%)
-- Construction Building produces services
+- Construction Cost recuded by 2 Times (-50%)
+- Construction Building produces services (10/20/30/40)
