@@ -1,0 +1,7 @@
+
+pmg_house_construction = {
+	texture = "gfx/interface/icons/production_method_icons/credit_by_gold.dds"
+	production_methods = {
+        pm_wood_house_construction
+	}
+}
