@@ -1,7 +1,14 @@
 
-pmg_house_construction = {
-	texture = "gfx/interface/icons/production_method_icons/credit_by_gold.dds"
+pmg_houses_construction = {
+	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
 	production_methods = {
-        pm_wood_house_construction
+        pm_wood_houses_construction
+	}
+}
+
+pmg_streets_construction = {
+	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
+	production_methods = {
+        pm_dirty_streets_construction
 	}
 }
