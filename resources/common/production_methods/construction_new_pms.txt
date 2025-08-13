@@ -26,7 +26,7 @@ pm_wood_houses_construction = {
 
 
 pm_dirty_streets_construction = {
-	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
+	texture = "gfx/interface/icons/production_method_icons/dirty_street.dds"
 
 	is_default = yes
 
@@ -43,6 +43,26 @@ pm_dirty_streets_construction = {
 	}
 
 }
+
+pm_greval_streets_construction = {
+	texture = "gfx/interface/icons/production_method_icons/greval_street.dds"
+
+	is_default = yes
+
+	building_modifiers = {
+		workforce_scaled = {
+            state_infrastructure_add = 10
+            state_streets_add = 20
+            state_market_access_price_impact = 0.02
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+
+}
+
 
 
 
