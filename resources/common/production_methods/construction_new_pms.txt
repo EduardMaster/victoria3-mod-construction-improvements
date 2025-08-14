@@ -64,5 +64,25 @@ pm_greval_streets_construction = {
 }
 
 
+pm_stone_streets_construction = {
+	texture = "gfx/interface/icons/production_method_icons/stone_street.dds"
+
+	is_default = yes
+
+	building_modifiers = {
+		workforce_scaled = {
+            state_infrastructure_add = 20
+            state_streets_add = 40
+            state_market_access_price_impact = 0.03
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+
+}
+
+
 
 
