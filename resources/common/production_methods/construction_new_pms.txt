@@ -31,33 +31,40 @@ pm_dirty_streets_construction = {
 	is_default = yes
 
 	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+	state_modifiers = {
 		workforce_scaled = {
             state_infrastructure_add = 5
             state_streets_add = 10
             state_market_access_price_impact = 0.01
+		}
+	}
+
+}
+
+pm_gravel_streets_construction = {
+	texture = "gfx/interface/icons/production_method_icons/greval_street.dds"
+
+	is_default = yes
+
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_gravel_add = 10
 		}
 
 		level_scaled = {
 			building_employment_laborers_add = 1000
 		}
 	}
-
-}
-
-pm_greval_streets_construction = {
-	texture = "gfx/interface/icons/production_method_icons/greval_street.dds"
-
-	is_default = yes
-
-	building_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
             state_infrastructure_add = 10
             state_streets_add = 20
             state_market_access_price_impact = 0.02
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = 1000
 		}
 	}
 
@@ -71,17 +78,48 @@ pm_stone_streets_construction = {
 
 	building_modifiers = {
 		workforce_scaled = {
-            state_infrastructure_add = 20
-            state_streets_add = 40
-            state_market_access_price_impact = 0.03
+			goods_input_stone_add = 10
 		}
 
 		level_scaled = {
 			building_employment_laborers_add = 1000
 		}
 	}
+	state_modifiers = {
+		workforce_scaled = {
+            state_infrastructure_add = 20
+            state_streets_add = 40
+            state_market_access_price_impact = 0.03
+		}
+	}
 
 }
+
+
+pm_asphalt_streets_construction = {
+	texture = "gfx/interface/icons/production_method_icons/asphalt_street.dds"
+
+	is_default = yes
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_oil_add = 10
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+            state_infrastructure_add = 40
+            state_streets_add = 80
+            state_market_access_price_impact = 0.04
+		}
+	}
+
+}
+
 
 
 
