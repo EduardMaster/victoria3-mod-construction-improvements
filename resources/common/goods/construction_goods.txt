@@ -1,0 +1,13 @@
+construction_service = {
+	# texture = "gfx/interface/icons/goods_icons/construction_service.dds"
+    texture = "gfx/interface/icons/principles_icons/construction.dds"
+	cost = 1
+	category = staple
+	prestige_factor = 1
+	tradeable = no
+	fixed_price = yes
+	consumption_tax_cost = 100
+	traded_quantity = 100
+	convoy_cost_multiplier = 0.001
+	obsession_chance = 1.0
+}

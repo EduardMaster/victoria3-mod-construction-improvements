@@ -13,8 +13,8 @@ building_construction_sector = {
 	}
 	production_method_groups = {
 		pmg_base_building_construction_sector
-		pmg_houses_construction
-		pmg_streets_construction
+		# pmg_houses_construction
+		# pmg_streets_construction
 	}
 
 	ai_value = 1000 # Construction sector should generally be preferred over other equal-priority spending items
