@@ -1,18 +1,18 @@
-﻿pm_wooden_buildings = {
+﻿REPLACE:pm_wooden_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
 
 	is_default = yes
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 2.5
+			country_construction_add = 10 # 2.5
 		}
 	}
-
+	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_fabric_add = 12.5 # 25
-			goods_input_wood_add = 32.5 # 75
+			goods_input_fabric_add = 50 # 25
+			goods_input_wood_add = 150 # 75
 			goods_output_construction_service_add = 10
 		}
 
@@ -29,11 +29,14 @@
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.0025
+			state_infrastructure_add = 5
+            state_streets_add = 10
+            state_market_access_price_impact = 0.005
 		}
 	}
 }
 
-pm_iron_frame_buildings = {
+REPLACE:pm_iron_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
 
 	unlocking_technologies = {
@@ -42,16 +45,16 @@ pm_iron_frame_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 5
+			country_construction_add = 20 # 5
 		}
 
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_wood_add = 20 # 40
-			goods_input_fabric_add = 10 # 20
-			goods_input_iron_add = 25 # 50
-			goods_input_tools_add = 5 # 10
+			goods_input_wood_add = 80 # 40
+			goods_input_fabric_add = 40 # 20
+			goods_input_iron_add = 100 # 50
+			goods_input_tools_add = 20 # 10
 			goods_output_construction_service_add = 20
 		}
 
@@ -69,11 +72,14 @@ pm_iron_frame_buildings = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.005
+			state_infrastructure_add = 10
+            state_streets_add = 20
+            state_market_access_price_impact = 0.01
 		}
 	}
 }
 
-pm_steel_frame_buildings = {
+REPLACE:pm_steel_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
 
 	unlocking_technologies = {
@@ -82,17 +88,17 @@ pm_steel_frame_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 10
+			country_construction_add = 40 # 10
 		}
 	}
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_steel_add = 25 # 50
-			goods_input_glass_add = 20 # 40
-			goods_input_explosives_add = 5 # 10
-			goods_input_tools_add = 10 # 20
-			goods_output_construction_service_add = 30
+			goods_input_steel_add = 100 # 50
+			goods_input_glass_add = 80 # 40
+			goods_input_explosives_add = 20 # 10
+			goods_input_tools_add = 40 # 20
+			goods_output_construction_service_add = 40
 		}
 
 		level_scaled = {
@@ -109,11 +115,14 @@ pm_steel_frame_buildings = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.0075
+			state_infrastructure_add = 15
+            state_streets_add = 40
+            state_market_access_price_impact = 0.015
 		}
 	}
 }
 
-pm_arc_welded_buildings = {
+REPLACE:pm_arc_welded_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
 
 	unlocking_technologies = {
@@ -122,18 +131,18 @@ pm_arc_welded_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 20 # 15
+			country_construction_add = 80 # 15
 		}
 	}
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_steel_add = 25 # 50
-			goods_input_glass_add = 20 # 40
-			goods_input_explosives_add = 10 # 20
-			goods_input_tools_add = 20 # 40
-			goods_input_electricity_add = 20 # 40
-			goods_output_construction_service_add = 40
+			goods_input_steel_add = 100 # 50
+			goods_input_glass_add = 80 # 40
+			goods_input_explosives_add = 40 # 20
+			goods_input_tools_add = 80 # 40
+			goods_input_electricity_add = 80 # 40
+			goods_output_construction_service_add = 80
 		}
 
 		level_scaled = {
@@ -151,6 +160,9 @@ pm_arc_welded_buildings = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.01
+			state_infrastructure_add = 20
+            state_streets_add = 80
+            state_market_access_price_impact = 0.02
 		}
 	}
 
