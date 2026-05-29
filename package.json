@@ -1,12 +1,13 @@
 {
   "name": "victoria3-mod-construction-improvements",
   "version": "1.0.0",
-  "description": "Simple Victoria3 Mod that make construction more cheap",
+  "description": "Simple Victoria3 Mod that makes construction faster and less resource intensive.",
   "keywords": [
     "victoria3",
-    "infamy",
-    "more",
-    "limits"
+    "construction",
+    "more-speed",
+    "less-resources"
+
   ],
   "homepage": "https://github.com/EduardMaster/victoria3-mod-imperalis#readme",
   "bugs": {
@@ -21,7 +22,7 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/index.ts",
+    "deploy": "node --loader ts-node/esm src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

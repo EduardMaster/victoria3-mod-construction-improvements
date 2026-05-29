@@ -5,6 +5,7 @@ goods_output_construction_service_add={
 		ai_value=0
 	}
 }
+
 goods_output_construction_service_mult={
 	decimals=1
 	color=good

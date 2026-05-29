@@ -1,19 +1,22 @@
-﻿REPLACE:pm_wooden_buildings = {
+﻿# Idea each construction point value 250
+# Using less materials
+
+REPLACE:pm_wooden_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
 
 	is_default = yes
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 10 # 2.5
+			country_construction_add = 5 # 2.5
 		}
 	}
-	
+	# 5 points = 1250£
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_fabric_add = 50 # 25
-			goods_input_wood_add = 150 # 75
-			goods_output_construction_service_add = 10
+			goods_input_fabric_add = 25 # 20£ = 500£ # Vanila 25
+			goods_input_wood_add = 40 # 20£ = 800£ # Vanila 75
+			# goods_output_construction_service_add = 2
 		}
 
 		level_scaled = {
@@ -29,9 +32,6 @@
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.0025
-			state_infrastructure_add = 5
-            state_streets_add = 10
-            state_market_access_price_impact = 0.005
 		}
 	}
 }
@@ -45,17 +45,18 @@ REPLACE:pm_iron_frame_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 20 # 5
+			country_construction_add = 10 # 5
 		}
 
 	}
+	# 10 points = 2500£
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_wood_add = 80 # 40
-			goods_input_fabric_add = 40 # 20
-			goods_input_iron_add = 100 # 50
-			goods_input_tools_add = 20 # 10
-			goods_output_construction_service_add = 20
+			goods_input_wood_add = 20 # 20£ = 400£ # Vanila 40
+			goods_input_fabric_add = 20 # 20£ = 400£ # Vanila 20
+			goods_input_iron_add = 40 # 40£ = 1600£ # Vanila 50
+			goods_input_tools_add = 5 # 40£ = 200£ # Vanila 10
+			# goods_output_construction_service_add = 20
 		}
 
 		level_scaled = {
@@ -72,13 +73,11 @@ REPLACE:pm_iron_frame_buildings = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.005
-			state_infrastructure_add = 10
-            state_streets_add = 20
-            state_market_access_price_impact = 0.01
 		}
 	}
 }
 
+# 20 points = 5000£
 REPLACE:pm_steel_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
 
@@ -88,17 +87,17 @@ REPLACE:pm_steel_frame_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 40 # 10
+			country_construction_add = 20 # 10
 		}
 	}
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_steel_add = 100 # 50
-			goods_input_glass_add = 80 # 40
-			goods_input_explosives_add = 20 # 10
-			goods_input_tools_add = 40 # 20
-			goods_output_construction_service_add = 40
+			goods_input_steel_add = 50 # 50£ = 2500£ # Vanila 50
+			goods_input_glass_add = 40 # 40£ = 1600£ #  Vanila 40
+			goods_input_explosives_add = 10 # 50£ = 500£ # Vanila 10
+			goods_input_tools_add = 10 # 40£ = 400£ # Vanila 20
+			# goods_output_construction_service_add = 40
 		}
 
 		level_scaled = {
@@ -115,13 +114,11 @@ REPLACE:pm_steel_frame_buildings = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.0075
-			state_infrastructure_add = 15
-            state_streets_add = 40
-            state_market_access_price_impact = 0.015
 		}
 	}
 }
 
+# 40 points = 10000£
 REPLACE:pm_arc_welded_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
 
@@ -131,18 +128,18 @@ REPLACE:pm_arc_welded_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 80 # 15
+			country_construction_add = 40 # 15
 		}
 	}
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_steel_add = 100 # 50
-			goods_input_glass_add = 80 # 40
-			goods_input_explosives_add = 40 # 20
-			goods_input_tools_add = 80 # 40
-			goods_input_electricity_add = 80 # 40
-			goods_output_construction_service_add = 80
+			goods_input_steel_add = 80 # 50£ = 4000£ # Vanila 50
+			goods_input_glass_add = 50 # 40£ = 2000£ # Vanila 40
+			goods_input_explosives_add = 25 # 40£ = 1000£ # Vanila 20
+			goods_input_tools_add = 30 # 40£ = 1200£ # Vanila 40
+			goods_input_electricity_add = 60 # 30£ = 1800£ # Vanila 40
+			# goods_output_construction_service_add = 80
 		}
 
 		level_scaled = {
@@ -160,9 +157,6 @@ REPLACE:pm_arc_welded_buildings = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.01
-			state_infrastructure_add = 20
-            state_streets_add = 80
-            state_market_access_price_impact = 0.02
 		}
 	}
 
