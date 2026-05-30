@@ -1,4 +1,5 @@
 
+
 construction_service = {
 	# texture = "gfx/interface/icons/goods_icons/construction_service.dds"
     texture = "gfx/interface/icons/principles_icons/construction.dds"

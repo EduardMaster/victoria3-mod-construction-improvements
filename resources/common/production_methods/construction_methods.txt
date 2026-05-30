@@ -1,4 +1,5 @@
-﻿# Idea each construction point value 250
+﻿
+# Idea each construction point value 250
 # Using less materials
 
 REPLACE:pm_wooden_buildings = {
