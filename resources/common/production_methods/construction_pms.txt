@@ -191,7 +191,7 @@ INJECT:pm_trade_center_trade_quantity_limited = {
 		}
 		unscaled = {
 			goods_output_merchant_marine_add = 10
-			building_employment_laborers_add = 1000 # Terrest Transport
+			building_employment_laborers_add = 500 # Terrest Transport
 		}
 	}
 	state_modifiers = {
@@ -225,15 +225,16 @@ INJECT:pm_trade_center_trade_quantity_high = {
 		workforce_scaled = {
 			goods_input_merchant_marine_add = -1 # 5
 		}
+		unscaled = {
+			goods_output_merchant_marine_add = 10
+			building_employment_laborers_add = 2000 # Terrest Transport
+		}
 	}
 	state_modifiers = {
 		unscaled = {
 			state_trade_quantity_mult = 0.5 # 0.5
 		}
-		unscaled = {
-			goods_output_merchant_marine_add = 10
-			building_employment_laborers_add = 1000 # Terrest Transport
-		}
+		
 	}
 }
 
@@ -249,7 +250,7 @@ INJECT:pm_trade_center_trade_quantity_very_high = {
 		}
 		unscaled = {
 			goods_output_merchant_marine_add = 10
-			building_employment_laborers_add = 1000 # Terrest Transport
+			building_employment_laborers_add = 4000 # Terrest Transport
 		}
 	}
 	state_modifiers = {
