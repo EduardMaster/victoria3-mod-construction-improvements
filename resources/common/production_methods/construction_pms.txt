@@ -9,17 +9,17 @@ REPLACE:pm_wooden_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 5 # 2.5
+			country_construction_add = 8 # 2.5
 		}
 		unscaled = {
 			country_construction_add = 10
 		}
 	}
-	# 5 points = 1250£
+	# 8 points = 2000£
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_fabric_add = 25 # 20£ = 500£ # Vanila 25
-			goods_input_wood_add = 50 # 20£ = 1000£ # Vanila 75
+			goods_input_wood_add = 75 # 20£ = 1500£ # Vanila 75
 			# goods_output_construction_service_add = 2
 		}
 
@@ -30,6 +30,7 @@ REPLACE:pm_wooden_buildings = {
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
+			building_employment_laborers_add = 1000
 		}
 	}
 
@@ -49,19 +50,19 @@ REPLACE:pm_iron_frame_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 10 # 5
+			country_construction_add = 16 # 5
 		}
 		unscaled = {
 			country_construction_add = 10
 		}
 	}
-	# 10 points = 2500£
+	# 16 points = 4000£
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_wood_add = 20 # 20£ = 400£ # Vanila 40
+			goods_input_wood_add = 50 # 20£ = 1000£ # Vanila 40
 			goods_input_fabric_add = 20 # 20£ = 400£ # Vanila 20
-			goods_input_iron_add = 40 # 40£ = 1600£ # Vanila 50
-			goods_input_tools_add = 5 # 40£ = 200£ # Vanila 10
+			goods_input_iron_add = 55 # 40£ = 2200£ # Vanila 50
+			goods_input_tools_add = 10 # 40£ = 400£ # Vanila 10
 			# goods_output_construction_service_add = 20
 		}
 
@@ -73,6 +74,7 @@ REPLACE:pm_iron_frame_buildings = {
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
+			building_employment_laborers_add = 1000
 		}
 	}
 
@@ -83,7 +85,7 @@ REPLACE:pm_iron_frame_buildings = {
 	}
 }
 
-# 20 points = 5000£
+
 REPLACE:pm_steel_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
 
@@ -100,6 +102,7 @@ REPLACE:pm_steel_frame_buildings = {
 		}
 	}
 
+	# 20 points = 5000£
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_steel_add = 50 # 50£ = 2500£ # Vanila 50
@@ -117,6 +120,7 @@ REPLACE:pm_steel_frame_buildings = {
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
+			building_employment_laborers_add = 1000
 		}
 	}
 
@@ -127,7 +131,7 @@ REPLACE:pm_steel_frame_buildings = {
 	}
 }
 
-# 40 points = 10000£
+
 REPLACE:pm_arc_welded_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
 
@@ -137,20 +141,20 @@ REPLACE:pm_arc_welded_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 40 # 15
+			country_construction_add = 32 # 15
 		}
 		unscaled = {
 			country_construction_add = 10
 		}
 	}
-
+	# 32 points = 8100£
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_steel_add = 80 # 50£ = 4000£ # Vanila 50
+			goods_input_steel_add = 50 # 50£ = 2500£ # Vanila 50
 			goods_input_glass_add = 50 # 40£ = 2000£ # Vanila 40
-			goods_input_explosives_add = 25 # 40£ = 1000£ # Vanila 20
-			goods_input_tools_add = 30 # 40£ = 1200£ # Vanila 40
-			goods_input_electricity_add = 60 # 30£ = 1800£ # Vanila 40
+			goods_input_explosives_add = 20 # 40£ = 800£ # Vanila 20
+			goods_input_tools_add = 40 # 40£ = 1600£ # Vanila 40
+			goods_input_electricity_add = 40 # 30£ = 1200£ # Vanila 40
 			# goods_output_construction_service_add = 80
 		}
 
@@ -163,6 +167,7 @@ REPLACE:pm_arc_welded_buildings = {
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
+			building_employment_laborers_add = 1000
 		}
 	}
 
@@ -173,4 +178,83 @@ REPLACE:pm_arc_welded_buildings = {
 	}
 
 	required_input_goods = electricity
+}
+
+
+INJECT:pm_trade_center_trade_quantity_limited = {
+	# texture = "gfx/interface/icons/production_method_icons/trade_quantity_1.dds"
+	# low_pop_method = yes # AI will activate this method for states with low population
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_merchant_marine_add = -2 # 3
+		}
+		unscaled = {
+			goods_output_merchant_marine_add = 10
+			building_employment_laborers_add = 1000 # Terrest Transport
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			# state_trade_quantity_mult = -0.5
+		}
+	}
+}
+
+INJECT:pm_trade_center_trade_quantity_normal = {
+	# texture = "gfx/interface/icons/production_method_icons/trade_quantity_2.dds"
+	# is_default = yes
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_merchant_marine_add = -2 # 4
+		}
+		unscaled = {
+			goods_output_merchant_marine_add = 10
+			building_employment_laborers_add = 1000 # Terrest Transport
+		}
+	}
+}
+
+INJECT:pm_trade_center_trade_quantity_high = {
+	# texture = "gfx/interface/icons/production_method_icons/trade_quantity_3.dds"
+
+	# unlocking_technologies = { hydraulic_cranes }
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_merchant_marine_add = -1 # 5
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			state_trade_quantity_mult = 0.5 # 0.5
+		}
+		unscaled = {
+			goods_output_merchant_marine_add = 10
+			building_employment_laborers_add = 1000 # Terrest Transport
+		}
+	}
+}
+
+
+INJECT:pm_trade_center_trade_quantity_very_high = {
+	# texture = "gfx/interface/icons/production_method_icons/trade_quantity_4.dds"
+
+	# unlocking_technologies = { floating_harbor }
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_merchant_marine_add = 2 # 6
+		}
+		unscaled = {
+			goods_output_merchant_marine_add = 10
+			building_employment_laborers_add = 1000 # Terrest Transport
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			state_trade_quantity_mult = 2.0 # 1.0
+		}
+	}
 }
