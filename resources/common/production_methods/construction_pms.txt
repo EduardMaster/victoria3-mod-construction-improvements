@@ -11,12 +11,15 @@ REPLACE:pm_wooden_buildings = {
 		workforce_scaled = {
 			country_construction_add = 5 # 2.5
 		}
+		unscaled = {
+			country_construction_add = 10
+		}
 	}
 	# 5 points = 1250£
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_fabric_add = 25 # 20£ = 500£ # Vanila 25
-			goods_input_wood_add = 40 # 20£ = 800£ # Vanila 75
+			goods_input_wood_add = 50 # 20£ = 1000£ # Vanila 75
 			# goods_output_construction_service_add = 2
 		}
 
@@ -48,7 +51,9 @@ REPLACE:pm_iron_frame_buildings = {
 		workforce_scaled = {
 			country_construction_add = 10 # 5
 		}
-
+		unscaled = {
+			country_construction_add = 10
+		}
 	}
 	# 10 points = 2500£
 	building_modifiers = {
@@ -90,6 +95,9 @@ REPLACE:pm_steel_frame_buildings = {
 		workforce_scaled = {
 			country_construction_add = 20 # 10
 		}
+		unscaled = {
+			country_construction_add = 10
+		}
 	}
 
 	building_modifiers = {
@@ -130,6 +138,9 @@ REPLACE:pm_arc_welded_buildings = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_construction_add = 40 # 15
+		}
+		unscaled = {
+			country_construction_add = 10
 		}
 	}
 
