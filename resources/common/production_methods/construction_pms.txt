@@ -12,7 +12,7 @@ REPLACE:pm_wooden_buildings = {
 			country_construction_add = 8 # 2.5
 		}
 		unscaled = {
-			country_construction_add = 3
+			country_construction_add = 5
 		}
 	}
 	# 8 points = 2000£
@@ -30,7 +30,7 @@ REPLACE:pm_wooden_buildings = {
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
-			building_employment_laborers_add = 300
+			building_employment_laborers_add = 1000
 		}
 	}
 
@@ -74,7 +74,7 @@ REPLACE:pm_iron_frame_buildings = {
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
-			building_employment_laborers_add = 600
+			building_employment_laborers_add = 1000
 		}
 	}
 
@@ -98,7 +98,7 @@ REPLACE:pm_steel_frame_buildings = {
 			country_construction_add = 20 # 10
 		}
 		unscaled = {
-			country_construction_add = 9
+			country_construction_add = 8
 		}
 	}
 
@@ -120,7 +120,7 @@ REPLACE:pm_steel_frame_buildings = {
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
-			building_employment_laborers_add = 900
+			building_employment_laborers_add = 1000
 		}
 	}
 
@@ -144,7 +144,7 @@ REPLACE:pm_arc_welded_buildings = {
 			country_construction_add = 32 # 15
 		}
 		unscaled = {
-			country_construction_add = 12
+			country_construction_add = 10
 		}
 	}
 	# 32 points = 8100£
@@ -167,7 +167,7 @@ REPLACE:pm_arc_welded_buildings = {
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
-			building_employment_laborers_add = 1200
+			building_employment_laborers_add = 1000
 		}
 	}
 
